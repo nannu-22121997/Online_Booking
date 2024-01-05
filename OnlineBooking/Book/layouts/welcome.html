@@ -1,0 +1,22 @@
+{% extends 'common.html' %} {% block content %}
+  <h1>Welcome to ONLINE BOOKING</h1>
+  <h1>Welcome {{ request.user.first_name }}</h1>
+</div>
+
+<div>
+  <a href="/customernew">New Customer</a>
+  <a href="/logout">LOGOUT</a>
+</div>
+
+<div>
+  {% for x in Values %}
+  <div>
+    <div class="photobox">
+      <img src="/media/{{ x.customerphoto }}" >
+    </div>
+    <h1>{{ x.customername }}</h1>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

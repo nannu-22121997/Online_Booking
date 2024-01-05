@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: cornflowerblue;
+}
+
+h2 {
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+h1 {
+  text-align: center;
+  padding: 2vw;
+  background-color: cornsilk;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+form {
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+}

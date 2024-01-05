@@ -1,0 +1,17 @@
+{% extends 'common.html' %} {% block content %}
+<div>
+  <h1>Welcome to ONLINE BOOKING</h1>
+  <h1>Welcome{{request.user.first_name}}</h1>
+</div>
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div>{{myform.as_p}}</div>
+  <br />
+  <div>
+    <button type="submit">Register</button>
+  </div>
+</form>
+<div>
+  <a href="/logout">LOGOUT</a>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}" />
+</head>
+
+<body>
+  <div>
+    <div>
+      <img src="{% static 'image.jpg' %}" style="
+            margin: 4px;
+            border-radius: 50%;
+            padding: 8px;
+            margin-top: 15px;
+            box-shadow: 5px 5px 3px 5px rgb(0, 0, 0);
+          " />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <p>
+        <b style="
+              position: absolute;
+              top: 10%;
+              left: 58%;
+              transform: translateX(-50%);
+              background-color: cornsilk;
+              border-radius: 25px;
+              font-size: 8vw;
+              text-shadow: 0 -5px 0 rgb(66, 43, 43);
+              font-weight: 2vw;
+              white-space: nowrap;
+              box-shadow: 4px 6px 5px 3px rgb(0, 0, 0);
+            ">ONLINE BOOKING</b>
+      </p>
+    </div>
+    <hr />
+    <div>{% block content %} {% endblock %}</div>
+  </div>
+</body>
+
+</html>

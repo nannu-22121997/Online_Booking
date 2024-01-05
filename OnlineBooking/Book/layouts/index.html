@@ -1,0 +1,30 @@
+{% extends 'common.html' %} {% block content %}
+<div>
+  <h2 style="text-align: center">User Login</h2>
+
+  <h3 style="text-align: center">{{status}}</h3>
+  <form method="POST">
+    {% csrf_token %}
+    <div>
+      <fieldset style="border-radius: 25px">
+        <legend><b>username:</b></legend>
+        <input type="text" name="username" />
+      </fieldset>
+    </div>
+    <br />
+    <br />
+    <div>
+      <fieldset style="border-radius: 25px">
+        <legend><b>password:</b></legend>
+        <input type="password" name="password" />
+      </fieldset>
+    </div>
+    <br />
+    <div>
+      <button type="submit">Login</button>
+    </div>
+    <hr />
+    <div><br />New user?<a href="/signup">Signup</a></div>
+  </form>
+</div>
+{% endblock %}
